@@ -1,0 +1,52 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+:root {
+  --border-radius: 8px;
+  --color-title: #3c4242;
+  --color-text: #807d7e;
+  --border-img: 12px;
+}
+
+.container {
+  max-width: 1240px;
+  width: 1240px;
+  min-width: 450px;
+  margin: 0 auto;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  line-height: 1;
+  font-weight: 400;
+  font-family: 'Causten';
+  background-color: #fff;
+}

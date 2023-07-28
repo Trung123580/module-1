@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./src/css/defaultCss/reset.css" />
+        <link rel="stylesheet" href="./src/css/defaultCss/font.css" />
+        <link rel="stylesheet" href="./login.css" />
+        <link rel="stylesheet" href="./src/css/defaultCss/base.css" />
+        <title>Euphoria</title>
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="header-left">
+                        <div class="header-logo">
+                            <a href="">
+                                <img src="./src/logo/Logo.svg" alt="" />
+                            </a>
+                        </div>
+                        <div class="header-search">
+                            <label for="search-input" class="search-wrapper">
+                                <img src="./src/logo/search.svg" alt="" />
+                                <input type="text" id="search-input" placeholder="Search" />
+                            </label>
+                        </div>
+                    </div>
+                    <div class="header-right">
+                        <div class="header-menu">
+                            <div class="header-highlight">
+                                <h3>English (united States)</h3>
+                                <img src="./src/logo/arrow-bottom.svg" alt="" />
+                            </div>
+                            <ul class="header-highlight_menu">
+                                <li><a href="" class="header-highlight_item">Viet Nam </a></li>
+                                <li><a href="" class="header-highlight_item">Trung Quoc </a></li>
+                                <li><a href="" class="header-highlight_item">My </a></li>
+                                <li><a href="" class="header-highlight_item">Ha Lan </a></li>
+                                <li><a href="" class="header-highlight_item">Nga </a></li>
+                                <li><a href="" class="header-highlight_item">I Rac </a></li>
+                            </ul>
+                        </div>
+                        <div class="header-group">
+                            <button type="submit" data-key="login" class="header-login">
+                                login
+                            </button>
+                            <button type="submit" data-key="signup" class="header-signup">
+                                Sign Up
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="from">
+                <div class="from-left">
+                    <img class="form-banner" src="./src/img/banner-login.png" alt="" />
+                </div>
+                <div class="from-right " data-from="login">
+                    <div class="from-right_content">
+                        <h2 class="from-right_title">
+                            Sign In Page
+                        </h2>
+                        <div class="from-network">
+                            <button type="submit" class="from-network_gg">
+                                <img src="./src/logo/google.svg" alt="">
+                                Continue With Google
+                            </button>
+                            <button type="submit" class="from-network_tw">
+                                <img src="./src/logo/twitter.svg" alt="">
+                                Continue With Twitter
+                            </button>
+                        </div>
+                        <div class="from-or">
+                            <div class="driver"></div>
+                            <h3>OR</h3>
+                            <div class="driver"></div>
+                        </div>
+                        <form class="from-group" action="" method="post">
+                            <div class="from-email">
+                                <label for="email">User name or email address</label>
+                                <div class="email-input">
+                                    <input type="email" id="email">
+                                    <span class="show-error"></span>
+                                </div>
+                            </div>
+                            <div class="from-password">
+                                <div class="from-password_show">
+                                    <label for="password">Password</label>
+                                    <span>
+                                        <img class="show-password" src="./src/logo/Hide view.svg" alt="">
+                                        Hide
+                                    </span>
+                                </div>
+                                <div class="password-input">
+                                    <input type="password" id="password">
+                                    <span class="show-pass_password"></span>
+                                </div>
+                            </div>
+                            <a href="" class="forget_password" data-key="forget">Forget your password</a>
+                            <div class="from-submit">
+                                <button type="submit">Sign In</button>
+                                <span>Don’t have an account?<a href="" class="signup" data-key="signup">Sign
+                                        up</a></span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="from-right d-none" data-from="signup">
+                    <div class="from-right_content">
+                        <div class="from-right_title">
+                            <h2>Sign Up</h2>
+                            <span class="from-right_dsecription">Sign up for free to access to in any of our
+                                products</span>
+                        </div>
+                        <div class="from-network" style="margin-bottom: 50px;">
+                            <button type="submit" class="from-network_gg">
+                                <img src="./src/logo/google.svg" alt="">
+                                Continue With Google
+                            </button>
+                            <button type="submit" class="from-network_tw">
+                                <img src="./src/logo/twitter.svg" alt="">
+                                Continue With Twitter
+                            </button>
+                        </div>
+                        <div class="from-or d-none">
+                            <div class="driver"></div>
+                            <h3>OR</h3>
+                            <div class="driver"></div>
+                        </div>
+                        <form class="from-group" action="" method="post">
+                            <div class="from-email">
+                                <label for="email">Email Address</label>
+                                <div class="email-input">
+                                    <input type="email" id="email" placeholder="designer@gmail.com">
+                                    <span class="show-error"></span>
+                                </div>
+                            </div>
+                            <div class="from-password">
+                                <div class="from-password_show">
+                                    <label for="password">Password</label>
+                                    <span>
+                                        <img class="show-password" src="./src/logo/Hide view.svg" alt="">
+                                        Hide
+                                    </span>
+
+                                </div>
+                                <div class="password-input">
+                                    <input type="password" id="password">
+                                    <span class="show-pass_password"></span>
+                                </div>
+                            </div>
+                            <a href="" class="forget_password d-none" data-key="forget">Forget your password</a>
+                            <span class="from-right_dsecription">Use 8 or more characters with a mix of letters, numbers
+                                & symbols</span>
+
+                            <div class="from-right_checkbox">
+                                <div class="checkbox-1">
+                                    <input type="checkbox" name="" id="checkbox1">
+                                    <label for="checkbox1">Agree to our <a href="">Terms of use</a> and <a
+                                            href="">Privacy
+                                            Policy</a></label>
+                                </div>
+                                <div class="checkbox-2">
+                                    <input type="checkbox" name="" id="checkbox2">
+                                    <label for="checkbox2">Subscribe to our monthly newsletter</label>
+                                </div>
+                            </div>
+                            <div class="from-submit">
+                                <button type="submit">Sign In</button>
+                                <span>Don’t have an account?<a href="" class="login" data-key="login">Log
+                                        in</a></span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="from-right d-none" data-from="forget">
+                    <div class="from-right_content">
+                        <div class="from-right_title">
+                            <h2>Reset Your Password</h2>
+                            <span class="from-right_dsecription" style="
+                  font-family: 'Roboto';
+                  color: #676b80;
+                  font-size: 1.6rem;
+                  font-weight: 400;
+                  line-height: 20px;
+                ">Enter your email and we'll send you a link to reset your
+                                password.</span>
+                            <span class="from-right_dsecription">Please check it.</span>
+                        </div>
+
+
+                        <form class="from-group" action="" method="post">
+                            <div class="from-email">
+                                <label for="email">User name or email address</label>
+                                <div class="email-input">
+                                    <input type="email" id="email" />
+                                    <span class="show-error"></span>
+                                </div>
+                            </div>
+
+                            <div class="from-submit">
+                                <button type="submit">Sign In</button>
+                                <span>Back to <a href="" class="backLogin" data-key="login">Login
+                                    </a></span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+
+    <script src="./login.js"></script>
+
+</html>

@@ -1,0 +1,52 @@
+/* button */
+.sale-item_btn:hover,
+.sale-list_btn:hover,
+.banner-btn:hover,
+.from-network_gg:hover,
+.from-network_tw:hover,
+.from-submit > button:hover,
+.header-group > button:hover {
+  scale: 96%;
+  transform-origin: right;
+  transition: scale 0.3s;
+}
+/* hover-product */
+.sale-menu_item:hover,
+.sale-list_item:hover,
+.categories_item:hover,
+.new-item:hover,
+.deals-right:hover,
+.deals-left:hover {
+  transform: translate(0, -10px);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+/* text */
+.checkbox-2 > label > a:hover,
+.checkbox-1 > label > a:hover,
+.signup:hover,
+.forget_password:hover {
+  color: #8a33fd;
+  transition: 0.3s;
+}
+.d-none {
+  display: none;
+}
+.d-show {
+  display: block;
+}
+.show-important {
+  display: block !important;
+}
+
+/* show-nav */
+@keyframes showNav {
+  0% {
+    opacity: 0;
+    top: 0%;
+  }
+  100% {
+    opacity: 1;
+    top: 100%;
+  }
+}
