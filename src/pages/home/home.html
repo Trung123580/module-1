@@ -2,15 +2,15 @@
 <html lang="en">
 
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../../css/defaultCss/reset.css">
-        <link rel="stylesheet" href="../../css/defaultCss/font.css">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../../css/defaultCss/reset.css" />
+        <link rel="stylesheet" href="../../css/defaultCss/font.css" />
         <link rel="stylesheet" type="text/css"
             href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-        <link rel="stylesheet" href="./home.css">
-        <link rel="stylesheet" href="../../css/defaultCss/base.css">
-        <link rel="stylesheet" href="./responsive.css">
+        <link rel="stylesheet" href="./home.css" />
+        <link rel="stylesheet" href="../../css/defaultCss/base.css" />
+        <link rel="stylesheet" href="./responsive.css" />
         <title>Home</title>
     </head>
 
@@ -29,10 +29,10 @@
                             <li class="nav-item">
                                 <a href="">Shop</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item control " data-api="men">
                                 <a href="">Men</a>
                             </li>
-                            <li class="nav-item">
+                            <li class="nav-item control " data-api="women">
                                 <a href="">Women</a>
                             </li>
                             <li class="nav-item">
@@ -46,17 +46,17 @@
                             <ul class="header-group_menu">
                                 <li class="header-group_item">
                                     <a href="">
-                                        <img src="../../logo/heart.svg" alt="">
+                                        <img src="../../logo/heart.svg" alt="" />
                                     </a>
                                 </li>
                                 <li class="header-group_item">
                                     <a href="">
-                                        <img src="../../logo/user.svg" alt="">
+                                        <img src="../../logo/user.svg" alt="" />
                                     </a>
                                 </li>
                                 <li class="header-group_item">
                                     <a href="">
-                                        <img src="../../logo/cart.svg" alt="">
+                                        <img src="../../logo/cart.svg" alt="" />
                                     </a>
                                 </li>
                             </ul>
@@ -77,17 +77,17 @@
                         <ul class="header-group_menu">
                             <li class="header-group_item">
                                 <a href="">
-                                    <img src="../../logo/heart.svg" alt="">
+                                    <img src="../../logo/heart.svg" alt="" />
                                 </a>
                             </li>
                             <li class="header-group_item">
                                 <a href="">
-                                    <img src="../../logo/user.svg" alt="">
+                                    <img src="../../logo/user.svg" alt="" />
                                 </a>
                             </li>
                             <li class="header-group_item">
                                 <a href="">
-                                    <img src="../../logo/cart.svg" alt="">
+                                    <img src="../../logo/cart.svg" alt="" />
                                 </a>
                             </li>
                         </ul>
@@ -97,8 +97,8 @@
         </header>
         <section class="banner">
             <div class="banner-random">
-                <img class="banner-img" src="../../img/home-banner-2.jpg" alt="">
-                <img class="banner-img" src="../../img/home-banner.png" alt="">
+                <img class="banner-img" src="../../img/home-banner-2.jpg" alt="" />
+                <img class="banner-img" src="../../img/home-banner.png" alt="" />
             </div>
             <div class="banner-content">
                 <h3 class="banner-title">T-shirt / Tops</h3>
@@ -107,10 +107,10 @@
                 <a href="" class="banner-btn">Shop Now</a>
             </div>
             <span class="banner-left" onclick="changeSlide(`prev`)">
-                <img class="banner-left_icon" src="../../logo/ChevronLeft.svg" alt="">
+                <img class="banner-left_icon" src="../../logo/ChevronLeft.svg" alt="" />
             </span>
             <span class="banner-right" onclick="changeSlide(`next`)">
-                <img class="banner-left_icon" src="../../logo/ChevronRight.svg" alt="">
+                <img class="banner-left_icon" src="../../logo/ChevronRight.svg" alt="" />
             </span>
             <div class="banner-middle">
                 <span onclick="changeSlide(`prev`)"></span>
@@ -120,16 +120,15 @@
         <section class="deals">
             <div class="container">
                 <div class="deals-content">
-                    <div class="deals-left">
+                    <div class="deals-left" data-api="women">
                         <h4 class="deals-note">Low Price</h4>
                         <h2 class="deals-info">High Coziness</h2>
                         <h4 class="deals-sale">UPTO 50% OFF</h4>
                         <a href="../product/product.html" class="deals-explore">Explore Items</a>
                     </div>
-                    <div class="deals-right">
+                    <div class="deals-right" data-api="women">
                         <h4 class="deals-note">Beyoung Presents</h4>
-                        <h2 class="deals-info">Breezy Summer
-                            Style</h2>
+                        <h2 class="deals-info">Breezy Summer Style</h2>
                         <h4 class="deals-sale">UPTO 50% OFF</h4>
                         <a href="../product/product.html" class="deals-explore">Explore Items</a>
                     </div>
@@ -144,36 +143,36 @@
                         <h2 class="new-title">New Arrival</h2>
                     </div>
                     <div class="new-list">
-                        <div class="new-item">
-                            <img class="new-img" src="../../img/new-1.png" alt="">
+                        <div class="new-item" data-api="men">
+                            <img class="new-img" src="../../img/new-1.png" alt="" />
                             <h3 class="new-text">Knitted Joggers</h3>
                         </div>
-                        <div class="new-item">
-                            <img class="new-img" src="../../img/new-2.png" alt="">
+                        <div class="new-item" data-api="men">
+                            <img class="new-img" src="../../img/new-2.png" alt="" />
                             <h3 class="new-text">Full Sleeve</h3>
                         </div>
-                        <div class="new-item">
-                            <img class="new-img" src="../../img/new-3.png" alt="">
+                        <div class="new-item" data-api="men">
+                            <img class="new-img" src="../../img/new-3.png" alt="" />
                             <h3 class="new-text">Active T-Shirts</h3>
                         </div>
-                        <div class="new-item">
-                            <img class="new-img" src="../../img/new-4.png" alt="">
+                        <div class="new-item" data-api="women">
+                            <img class="new-img" src="../../img/new-4.png" alt="" />
                             <h3 class="new-text">Urban Shirts</h3>
                         </div>
-                        <div class="new-item">
-                            <img class="new-img" src="../../img/new-1.png" alt="">
+                        <div class="new-item" data-api="men">
+                            <img class="new-img" src="../../img/new-1.png" alt="" />
                             <h3 class="new-text">Urban Shirts</h3>
                         </div>
-                        <div class="new-item">
-                            <img class="new-img" src="../../img/new-2.png" alt="">
+                        <div class="new-item" data-api="men">
+                            <img class="new-img" src="../../img/new-2.png" alt="" />
                             <h3 class="new-text">Urban Shirts</h3>
                         </div>
-                        <div class="new-item">
-                            <img class="new-img" src="../../img/new-3.png" alt="">
+                        <div class="new-item" data-api="men">
+                            <img class="new-img" src="../../img/new-3.png" alt="" />
                             <h3 class="new-text">Urban Shirts</h3>
                         </div>
-                        <div class="new-item">
-                            <img class="new-img" src="../../img/new-4.png" alt="">
+                        <div class="new-item" data-api="men">
+                            <img class="new-img" src="../../img/new-4.png" alt="" />
                             <h3 class="new-text">Urban Shirts</h3>
                         </div>
                     </div>
@@ -188,59 +187,57 @@
                         <h2 class="new-title">Big Saving Zone</h2>
                     </div>
                     <div class="sale-menu">
-                        <div class="sale-menu_item">
-                            <img class="sale-item_banner" src="../../img/sale-1.png" alt="">
+                        <div class="sale-menu_item" data-api="men">
+                            <img class="sale-item_banner" src="../../img/sale-1.png" alt="" />
                             <div class="sale-item_info">
                                 <h3>Hawaiian Shirts</h3>
                                 <span>Dress up in summer vibe</span>
                                 <h4>UPTO 50% OFF</h4>
-                                <img class="sale-item_icon" src="../../logo/arrow-white_bottom.svg" alt="">
+                                <img class="sale-item_icon" src="../../logo/arrow-white_bottom.svg" alt="" />
                                 <a href="" class="sale-item_btn">shop now</a>
                             </div>
                         </div>
-                        <div class="sale-menu_item">
-                            <img class="sale-item_banner" src="../../img/sale-2.png" alt="">
+                        <div class="sale-menu_item" data-api="women">
+                            <img class="sale-item_banner" src="../../img/sale-2.png" alt="" />
                             <div class="sale-item_info">
                                 <a href="" class="sale-item_stock">Limited Stock</a>
                                 <h3>Printed T-Shirt</h3>
                                 <span>New Designs Every Week</span>
                                 <h4>UPTO 40% OFF</h4>
-                                <img class="sale-item_icon" src="../../logo/arrow-white_bottom.svg" alt="">
+                                <img class="sale-item_icon" src="../../logo/arrow-white_bottom.svg" alt="" />
                                 <a href="" class="sale-item_btn">shop now</a>
                             </div>
                         </div>
-                        <div class="sale-menu_item">
-                            <img class="sale-item_banner" src="../../img/sale-3.png" alt="">
+                        <div class="sale-menu_item" data-api="women">
+                            <img class="sale-item_banner" src="../../img/sale-3.png" alt="" />
                             <div class="sale-item_info">
                                 <h3>Cargo Joggers</h3>
                                 <span>Move with style & comfort</span>
                                 <h4>UPTO 50% OFF</h4>
-                                <img class="sale-item_icon" src="../../logo/arrow-black_bottom.svg" alt="">
-                                <a href="" class="sale-item_btn"
-                                    style="border: 1px solid #3c4242 ; color: #3c4242;;">shop now</a>
+                                <img class="sale-item_icon" src="../../logo/arrow-black_bottom.svg" alt="" />
+                                <a href="" class="sale-item_btn" style="border: 1px solid #3c4242; color: #3c4242">shop
+                                    now</a>
                             </div>
                         </div>
                     </div>
                     <div class="sale-list">
-                        <div class="sale-list_item">
-                            <img class="sale-item_banner" src="../../img/sale-4.png" alt="">
+                        <div class="sale-list_item" data-api="men">
+                            <img class="sale-item_banner" src="../../img/sale-4.png" alt="" />
                             <div class="sale-list_info">
-                                <h3>Urban
-                                    Shirts</h3>
+                                <h3>Urban Shirts</h3>
                                 <span>Live In Confort</span>
                                 <h4>FLAT 60% OFF</h4>
-                                <img src="../../logo/arrow-black_bottom.svg" alt="">
+                                <img src="../../logo/arrow-black_bottom.svg" alt="" />
                                 <a href="" class="sale-list_btn">shop now</a>
                             </div>
                         </div>
-                        <div class="sale-list_item">
-                            <img class="sale-item_banner" src="../../img/sale-5.png" alt="">
+                        <div class="sale-list_item" data-api="men">
+                            <img class="sale-item_banner" src="../../img/sale-5.png" alt="" />
                             <div class="sale-list_info">
-                                <h3>Oversized
-                                    T-Shirts</h3>
+                                <h3>Oversized T-Shirts</h3>
                                 <span>Street Style Icon</span>
                                 <h4>FLAT 60% OFF</h4>
-                                <img src="../../logo/arrow-black_bottom.svg" alt="">
+                                <img src="../../logo/arrow-black_bottom.svg" alt="" />
                                 <a href="" class="sale-list_btn">shop now</a>
                             </div>
                         </div>
@@ -253,20 +250,15 @@
                 <div class="offers-content">
                     <div class="offers-left">
                         <div class="offers-left_content">
-                            <h2 class="offers-title">
-                                WE MADE YOUR EVERYDAY FASHION BETTER!
-                            </h2>
-                            <p class="offers-description">In our journey to improve everyday fashion, euphoria presents
-                                EVERYDAY wear range - Comfortable & Affordable fashion
-                                24/7</p>
-                            <a href="" class="offers-btn">
-                                Shop Now
-                            </a>
+                            <h2 class="offers-title">WE MADE YOUR EVERYDAY FASHION BETTER!</h2>
+                            <p class="offers-description">
+                                In our journey to improve everyday fashion, euphoria presents EVERYDAY wear range -
+                                Comfortable & Affordable fashion 24/7
+                            </p>
+                            <a href="" class="offers-btn"> Shop Now </a>
                         </div>
                     </div>
-                    <div class="offers-right">
-
-                    </div>
+                    <div class="offers-right"></div>
                 </div>
             </div>
         </section>
@@ -276,8 +268,40 @@
                     <span class="new-bar"></span>
                     <h2 class="new-title">Categories For Men</h2>
                 </div>
-                <div class="categories-menu">
-
+                <div class="categories-menu"></div>
+            </div>
+        </section>
+        <section class="categories-women">
+            <div class="container">
+                <div class="new-top">
+                    <span class="new-bar"></span>
+                    <h2 class="new-title">Categories For Women</h2>
+                </div>
+                <div class="categories-menu_women"></div>
+            </div>
+        </section>
+        <section class="brand">
+            <div class="container">
+                <div class="brand-content">
+                    <h2 class="brand-title">Top Brands Deal</h2>
+                    <p class="brand-desc">Up To <span>60%</span> off on brands</p>
+                    <ul class="brand-menu">
+                        <li class="brand-item">
+                            <img src="../../img/brand-1.png" alt="" />
+                        </li>
+                        <li class="brand-item">
+                            <img src="../../img/brand-2.png" alt="" />
+                        </li>
+                        <li class="brand-item">
+                            <img src="../../img/brand-3.png" alt="" />
+                        </li>
+                        <li class="brand-item">
+                            <img src="../../img/brand-4.png" alt="" />
+                        </li>
+                        <li class="brand-item">
+                            <img src="../../img/brand-5.png" alt="" />
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -285,13 +309,441 @@
             <div class="container">
                 <div class="new-top">
                     <span class="new-bar"></span>
-                    <h2 class="new-title">Categories For Men</h2>
+                    <h2 class="new-title">In The Limelight</h2>
                 </div>
-                <div class="categories-menu_women">
+                <div class="categories-menu_women2"></div>
+            </div>
+        </section>
+        <section class="feedback">
+            <div class="container">
+                <div class="new-top">
+                    <span class="new-bar"></span>
+                    <h2 class="new-title">Feedback</h2>
+                </div>
+                <div class="feedback-content">
+                    <div class="feedback-menu">
+                        <div class="feedback-item">
+                            <div class="feedback-info">
+                                <div class="feedback-user">
+                                    <img class="feedback-avatar" src="../../img/feedback-1.png" alt="" />
+                                    <ul>
+                                        <li>
+                                            <img src="../../logo/icon-star.svg" alt="" />
+                                        </li>
+                                        <li>
+                                            <img src="../../logo/icon-star.svg" alt="" />
+                                        </li>
+                                        <li>
+                                            <img src="../../logo/icon-star.svg" alt="" />
+                                        </li>
+                                        <li>
+                                            <img src="../../logo/icon-star_half.svg" alt="" />
+                                        </li>
+                                        <li>
+                                            <img src="../../logo/icon-star_noBG.svg" alt="" />
+                                        </li>
+                                    </ul>
+                                </div>
+                                <h3 class="feedback-name">Floyd Miles</h3>
+                                <p class="feedback-desc">
+                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                    officia consequat duis enim velit mollit.<br />
+                                    Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt
+                                    ullamco est sit aliqua dolor do amet sint. Velit
+                                    officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+                                    amet.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="feedback-item">
+                            <div class="feedback-info">
+                                <div class="feedback-user">
+                                    <img class="feedback-avatar" src="../../img/feedback-2.png" alt="" />
+                                    <ul>
+                                        <li>
+                                            <img src="../../logo/icon-star.svg" alt="" />
+                                        </li>
+                                        <li>
+                                            <img src="../../logo/icon-star.svg" alt="" />
+                                        </li>
+                                        <li>
+                                            <img src="../../logo/icon-star.svg" alt="" />
+                                        </li>
+                                        <li>
+                                            <img src="../../logo/icon-star.svg" alt="" />
+                                        </li>
+                                        <li>
+                                            <img src="../../logo/icon-star_noBG.svg" alt="" />
+                                        </li>
+                                    </ul>
+                                </div>
+                                <h3 class="feedback-name">Ronald Richards</h3>
+                                <p class="feedback-desc">
+                                    ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
+                                    mollit. Exercitation veniam consequat
+                                    sunt nostrud amet.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="feedback-item">
+                            <div class="feedback-info">
+                                <div class="feedback-user">
+                                    <img class="feedback-avatar" src="../../img/feedback-3.png" alt="" />
+                                    <ul>
+                                        <li>
+                                            <img src="../../logo/icon-star.svg" alt="" />
+                                        </li>
+                                        <li>
+                                            <img src="../../logo/icon-star.svg" alt="" />
+                                        </li>
+                                        <li>
+                                            <img src="../../logo/icon-star.svg" alt="" />
+                                        </li>
+                                        <li>
+                                            <img src="../../logo/icon-star_half.svg" alt="" />
+                                        </li>
+                                        <li>
+                                            <img src="../../logo/icon-star_noBG.svg" alt="" />
+                                        </li>
+                                    </ul>
+                                </div>
+                                <h3 class="feedback-name">Savannah Nguyen</h3>
+                                <p class="feedback-desc">
+                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                    officia consequat duis enim velit mollit.<br />
+                                    Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt
+                                    ullamco est sit aliqua dolor do amet sint. Velit
+                                    officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+                                    amet.
+                                </p>
+                            </div>
+                        </div>
 
+                        <div class="feedback-item">
+                            <div class="feedback-info">
+                                <div class="feedback-user">
+                                    <img class="feedback-avatar" src="../../img/feedback-2.png" alt="" />
+                                    <ul>
+                                        <li>
+                                            <img src="../../logo/icon-star.svg" alt="" />
+                                        </li>
+                                        <li>
+                                            <img src="../../logo/icon-star.svg" alt="" />
+                                        </li>
+                                        <li>
+                                            <img src="../../logo/icon-star.svg" alt="" />
+                                        </li>
+                                        <li>
+                                            <img src="../../logo/icon-star.svg" alt="" />
+                                        </li>
+                                        <li>
+                                            <img src="../../logo/icon-star_noBG.svg" alt="" />
+                                        </li>
+                                    </ul>
+                                </div>
+                                <h3 class="feedback-name">Ronald Richards</h3>
+                                <p class="feedback-desc">
+                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                    officia consequat duis enim velit mollit.<br />
+                                    Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt
+                                    ullamco est sit aliqua dolor do amet sint. Velit
+                                    officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+                                    amet.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="feedback-item">
+                            <div class="feedback-info">
+                                <div class="feedback-user">
+                                    <img class="feedback-avatar" src="../../img/feedback-1.png" alt="" />
+                                    <ul>
+                                        <li>
+                                            <img src="../../logo/icon-star.svg" alt="" />
+                                        </li>
+                                        <li>
+                                            <img src="../../logo/icon-star.svg" alt="" />
+                                        </li>
+                                        <li>
+                                            <img src="../../logo/icon-star.svg" alt="" />
+                                        </li>
+                                        <li>
+                                            <img src="../../logo/icon-star_half.svg" alt="" />
+                                        </li>
+                                        <li>
+                                            <img src="../../logo/icon-star_noBG.svg" alt="" />
+                                        </li>
+                                    </ul>
+                                </div>
+                                <h3 class="feedback-name">Floyd Miles</h3>
+                                <p class="feedback-desc">
+                                    ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
+                                    mollit. Exercitation veniam consequat
+                                    sunt nostrud amet.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="feedback-item">
+                            <div class="feedback-info">
+                                <div class="feedback-user">
+                                    <img class="feedback-avatar" src="../../img/feedback-3.png" alt="" />
+                                    <ul>
+                                        <li>
+                                            <img src="../../logo/icon-star.svg" alt="" />
+                                        </li>
+                                        <li>
+                                            <img src="../../logo/icon-star.svg" alt="" />
+                                        </li>
+                                        <li>
+                                            <img src="../../logo/icon-star.svg" alt="" />
+                                        </li>
+                                        <li>
+                                            <img src="../../logo/icon-star_half.svg" alt="" />
+                                        </li>
+                                        <li>
+                                            <img src="../../logo/icon-star_noBG.svg" alt="" />
+                                        </li>
+                                    </ul>
+                                </div>
+                                <h3 class="feedback-name">Savannah Nguyen</h3>
+                                <p class="feedback-desc">
+                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                    officia consequat duis enim velit mollit.<br />
+                                    Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt
+                                    ullamco est sit aliqua dolor do amet sint. Velit
+                                    officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+                                    amet.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="feedback-item">
+                            <div class="feedback-info">
+                                <div class="feedback-user">
+                                    <img class="feedback-avatar" src="../../img/feedback-1.png" alt="" />
+                                    <ul>
+                                        <li>
+                                            <img src="../../logo/icon-star.svg" alt="" />
+                                        </li>
+                                        <li>
+                                            <img src="../../logo/icon-star.svg" alt="" />
+                                        </li>
+                                        <li>
+                                            <img src="../../logo/icon-star.svg" alt="" />
+                                        </li>
+                                        <li>
+                                            <img src="../../logo/icon-star_half.svg" alt="" />
+                                        </li>
+                                        <li>
+                                            <img src="../../logo/icon-star_noBG.svg" alt="" />
+                                        </li>
+                                    </ul>
+                                </div>
+                                <h3 class="feedback-name">Floyd Miles</h3>
+                                <p class="feedback-desc">
+                                    ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit
+                                    mollit. Exercitation veniam consequat
+                                    sunt nostrud amet.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="feedback-item">
+                            <div class="feedback-info">
+                                <div class="feedback-user">
+                                    <img class="feedback-avatar" src="../../img/feedback-3.png" alt="" />
+                                    <ul>
+                                        <li>
+                                            <img src="../../logo/icon-star.svg" alt="" />
+                                        </li>
+                                        <li>
+                                            <img src="../../logo/icon-star.svg" alt="" />
+                                        </li>
+                                        <li>
+                                            <img src="../../logo/icon-star.svg" alt="" />
+                                        </li>
+                                        <li>
+                                            <img src="../../logo/icon-star_half.svg" alt="" />
+                                        </li>
+                                        <li>
+                                            <img src="../../logo/icon-star_noBG.svg" alt="" />
+                                        </li>
+                                    </ul>
+                                </div>
+                                <h3 class="feedback-name">Savannah Nguyen</h3>
+                                <p class="feedback-desc">
+                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                    officia consequat duis enim velit mollit.<br />
+                                    Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt
+                                    ullamco est sit aliqua dolor do amet sint. Velit
+                                    officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+                                    amet.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="feedback-item">
+                            <div class="feedback-info">
+                                <div class="feedback-user">
+                                    <img class="feedback-avatar" src="../../img/feedback-2.png" alt="" />
+                                    <ul>
+                                        <li>
+                                            <img src="../../logo/icon-star.svg" alt="" />
+                                        </li>
+                                        <li>
+                                            <img src="../../logo/icon-star.svg" alt="" />
+                                        </li>
+                                        <li>
+                                            <img src="../../logo/icon-star.svg" alt="" />
+                                        </li>
+                                        <li>
+                                            <img src="../../logo/icon-star.svg" alt="" />
+                                        </li>
+                                        <li>
+                                            <img src="../../logo/icon-star_noBG.svg" alt="" />
+                                        </li>
+                                    </ul>
+                                </div>
+                                <h3 class="feedback-name">Ronald Richards</h3>
+                                <p class="feedback-desc">
+                                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit
+                                    officia consequat duis enim velit mollit.<br />
+                                    Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt
+                                    ullamco est sit aliqua dolor do amet sint. Velit
+                                    officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud
+                                    amet.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-menu">
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <h3 class="footer-item_title">Need Help</h3>
+                            </li>
+                            <li class="footer-item">
+                                <a href="">Contact Us</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="">Track Order</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="">Returns & Refunds</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="">FAQ's</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="">Career</a>
+                            </li>
+                        </ul>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <h3 class="footer-item_title">Company</h3>
+                            </li>
+                            <li class="footer-item">
+                                <a href="">About Us</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="">euphoria Blog</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="">euphoriastan</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="">Collaboration</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="">Media</a>
+                            </li>
+                        </ul>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <h3 class="footer-item_title">More Info</h3>
+                            </li>
+                            <li class="footer-item">
+                                <a href="">Term and Conditions</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="">Privacy Policy</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="">Shipping Policy</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="">Sitemap</a>
+                            </li>
+                        </ul>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <h3 class="footer-item_title">Location</h3>
+                            </li>
+                            <li class="footer-item">
+                                <a href="">support@euphoria.in</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="">Eklingpura Chouraha, Ahmedabad Main Road</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="">(NH 8- Near Mahadev Hotel) Udaipur, India- 313002</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-about">
+                        <ul class="footer-about_menu">
+                            <li class="footer-about_item">
+                                <a href="">
+                                    <img src="../../logo/icon-fb.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="footer-about_item">
+                                <a href="">
+                                    <img src="../../logo/icon-instagram.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="footer-about_item">
+                                <a href="">
+                                    <img src="../../logo/icon-tw.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="footer-about_item">
+                                <a href="">
+                                    <img src="../../logo/icon-in.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="footer-download">
+                            <h3>Download The App</h3>
+                            <div class="footer-app">
+                                <a class="footer-app_content">
+                                    <img src="../../logo/icon-chplay.svg" alt="">
+                                    <div class="footer-text">
+                                        <span>android app on</span>
+                                        <h3>Google Play</h3>
+                                    </div>
+                                </a>
+                                <a class="footer-app_content">
+                                    <img src="../../logo/icon-appstore.svg" alt="">
+                                    <div class="footer-text">
+                                        <span>Available on the</span>
+                                        <h3>App Store</h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular">
+                        <h2>Popular Categories</h2>
+                        <img src="../../logo/Icon-bottom.svg" alt="">
+                    </div>
+                    <p class="footer-copyright">
+                        Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
     </body>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -302,7 +754,7 @@
                 slidesToShow: 4,
                 slidesToScroll: 1,
                 autoplay: true,
-                autoplaySpeed: 2000,
+                autoplaySpeed: 2700,
                 prevArrow: `<button type="button" class="slick-prev slick-arrow">
                     <img class="icon-prev" src="../../logo/arrowleft.svg" alt=""> 
                     </button>`,
@@ -314,20 +766,49 @@
                         breakpoint: 992,
                         settings: {
                             slidesToShow: 2,
-                            slidesToScroll: 2
-                        }
+                            slidesToScroll: 2,
+                        },
                     },
                     {
                         breakpoint: 768,
                         settings: {
                             slidesToShow: 1,
-                            slidesToScroll: 1
-                        }
-                    }
-                ]
+                            slidesToScroll: 1,
+                        },
+                    },
+                ],
+            });
+        });
+        $(document).ready(function () {
+            $('.feedback-menu').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                adaptiveHeight: true,
+                autoplay: true,
+                autoplaySpeed: 3500,
+                responsive: [
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
+                        },
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        },
+                    },
+                ],
             });
         });
     </script>
+    <script src="../../../base.js"></script>
     <script src="./home.js"></script>
 
 </html>

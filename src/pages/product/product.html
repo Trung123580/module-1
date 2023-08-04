@@ -2,13 +2,521 @@
 <html lang="en">
 
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../../css/defaultCss/reset.css" />
+        <link rel="stylesheet" href="../../css/defaultCss/font.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./product.css" />
+        <link rel="stylesheet" href="../../css/defaultCss/base.css" />
+        <link rel="stylesheet" href="./responsive.css" />
+        <title>Product</title>
     </head>
 
     <body>
-        <h1>product</h1>
+        <header class="header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="header-logo">
+                        <a href="">
+                            <img src="../../logo/Logo.svg" alt="" />
+                        </a>
+                    </div>
+
+                    <nav class="nav">
+                        <ul class="nav-list">
+                            <li class="nav-item">
+                                <a href="../home/home.html">Shop</a>
+                            </li>
+                            <li class="nav-item control" data-api="men">
+                                <a href="">Men</a>
+                            </li>
+                            <li class="nav-item control" data-api="women">
+                                <a href="">Women</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="">Combos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="">Joggers</a>
+                            </li>
+                        </ul>
+                        <div class="header-group_respon">
+                            <ul class="header-group_menu">
+                                <li class="header-group_item">
+                                    <a href="">
+                                        <img src="../../logo/heart.svg" alt="" />
+                                    </a>
+                                </li>
+                                <li class="header-group_item">
+                                    <a href="">
+                                        <img src="../../logo/user.svg" alt="" />
+                                    </a>
+                                </li>
+                                <li class="header-group_item">
+                                    <a href="">
+                                        <img src="../../logo/cart.svg" alt="" />
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="header-search">
+                        <label for="search-input" class="search-wrapper">
+                            <img src="../../logo/search.svg" alt="" />
+                            <input type="text" id="search-input" placeholder="Search" />
+                        </label>
+                    </div>
+                    <div class="nav-bar">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="header-group">
+                        <ul class="header-group_menu">
+                            <li class="header-group_item">
+                                <a href="">
+                                    <img src="../../logo/heart.svg" alt="" />
+                                </a>
+                            </li>
+                            <li class="header-group_item">
+                                <a href="">
+                                    <img src="../../logo/user.svg" alt="" />
+                                </a>
+                            </li>
+                            <li class="header-group_item">
+                                <a href="">
+                                    <img src="../../logo/cart.svg" alt="" />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="product">
+            <div class="container">
+                <div class="product-main">
+                    <div class="icon-show">
+                        Menu
+                        <i class="fa-solid fa-angles-right"></i>
+                    </div>
+                    <aside class="product-nav">
+                        <div class="product-nav_title">
+                            <h2>Filter</h2>
+                            <img src="../../logo/filter.svg" alt="">
+                        </div>
+                        <ul class="product-nav_list">
+                            <li class="product-nav_item">
+                                <a href="">Tops</a>
+                                <img class="icon-arrow" src="../../logo/icon-arrow.svg" alt="">
+                            </li>
+                            <li class="product-nav_item">
+                                <a href="">Printed T-shirts</a>
+                                <img class="icon-arrow" src="../../logo/icon-arrow.svg" alt="">
+                            </li>
+                            <li class="product-nav_item">
+                                <a href="">Plain T-shirts</a>
+                                <img class="icon-arrow" src="../../logo/icon-arrow.svg" alt="">
+                            </li>
+                            <li class="product-nav_item">
+                                <a href="">Kurti</a>
+                                <img class="icon-arrow" src="../../logo/icon-arrow.svg" alt="">
+                            </li>
+                            <li class="product-nav_item">
+                                <a href="">Boxers</a>
+                                <img class="icon-arrow" src="../../logo/icon-arrow.svg" alt="">
+                            </li>
+                            <li class="product-nav_item">
+                                <a href="">Full sleeve T-shirts</a>
+                                <img class="icon-arrow" src="../../logo/icon-arrow.svg" alt="">
+                            </li>
+                            <li class="product-nav_item">
+                                <a href="">Joggers</a>
+                                <img class="icon-arrow" src="../../logo/icon-arrow.svg" alt="">
+                            </li>
+                            <li class="product-nav_item">
+                                <a href="">Payjamas</a>
+                                <img class="icon-arrow" src="../../logo/icon-arrow.svg" alt="">
+                            </li>
+                            <li class="product-nav_item">
+                                <a href="">Jeans</a>
+                                <img class="icon-arrow" src="../../logo/icon-arrow.svg" alt="">
+                            </li>
+                        </ul>
+                        <div class="product-nav_title">
+                            <h2>Price</h2>
+                            <img class="icon-arrow" src="../../logo/icon-arrow.svg" alt="">
+                        </div>
+                        <div class="product-nav_prices">
+                            <div class="double-input">
+                                <input type="range" class="custom-range">
+                                <input type="range" class="custom-range">
+                            </div>
+                            <div class="double-button">
+                                <button type="button">$70</button>
+                                <button type="button">$600</button>
+                            </div>
+                        </div>
+                        <div class="product-nav_title">
+                            <h2>Colors</h2>
+                            <img class="icon-arrow" src="../../logo/icon-arrow.svg" alt="">
+                        </div>
+                        <ul class="color__list">
+                            <li class="color__item">
+                                <div class="color"></div>
+                                <span>Purple</span>
+                            </li>
+                            <li class="color__item">
+                                <div class="color"></div>
+                                <span>Black</span>
+                            </li>
+                            <li class="color__item">
+                                <div class="color"></div>
+                                <span>Red</span>
+                            </li>
+                            <li class="color__item">
+                                <div class="color"></div>
+                                <span>Orange</span>
+                            </li>
+                            <li class="color__item">
+                                <div class="color"></div>
+                                <span>Navy</span>
+                            </li>
+                            <li class="color__item">
+                                <div class="color" style="border: 1px solid #F4F1F1;"></div>
+                                <span>White</span>
+                            </li>
+                            <li class="color__item">
+                                <div class="color" style="background: #D67E3B;"></div>
+                                <span>Broom</span>
+                            </li>
+                            <li class="color__item">
+                                <div class="color"></div>
+                                <span>Green</span>
+                            </li>
+                            <li class="color__item">
+                                <div class="color"></div>
+                                <span>Yellow</span>
+                            </li>
+                            <li class="color__item">
+                                <div class="color"></div>
+                                <span>Grey</span>
+                            </li>
+                            <li class="color__item">
+                                <div class="color"></div>
+                                <span>Pink</span>
+                            </li>
+                            <li class="color__item">
+                                <div class="color"></div>
+                                <span>Blue</span>
+                            </li>
+                        </ul>
+                        <div class="product-nav_title">
+                            <h2>Size</h2>
+                            <img class="icon-arrow" src="../../logo/icon-arrow.svg" alt="">
+                        </div>
+                        <ul class="size_list">
+                            <li class="size_item">
+                                <a href="">XXS</a>
+                            </li>
+                            <li class="size_item">
+                                <a href="">XL</a>
+                            </li>
+                            <li class="size_item">
+                                <a href="">XS</a>
+                            </li>
+                            <li class="size_item">
+                                <a href="">S</a>
+                            </li>
+                            <li class="size_item">
+                                <a href="">M</a>
+                            </li>
+                            <li class="size_item">
+                                <a href="">L</a>
+                            </li>
+                            <li class="size_item">
+                                <a href="">XXL</a>
+                            </li>
+                            <li class="size_item">
+                                <a href="">3XL</a>
+                            </li>
+                            <li class="size_item">
+                                <a href="">4XL</a>
+                            </li>
+                        </ul>
+                        <div class="product-nav_title">
+                            <h2>Dress Style</h2>
+                            <img class="icon-arrow" src="../../logo/icon-arrow.svg" alt="">
+                        </div>
+                        <ul class="style_list">
+                            <li class="style_item">
+                                <a href="">Classic</a>
+                                <img class="icon-arrow" src="../../logo/icon-arrow.svg" alt="">
+                            </li>
+                            <li class="style_item">
+                                <a href="">Casual</a>
+                                <img class="icon-arrow" src="../../logo/icon-arrow.svg" alt="">
+                            </li>
+                            <li class="style_item">
+                                <a href="">Business</a>
+                                <img class="icon-arrow" src="../../logo/icon-arrow.svg" alt="">
+                            </li>
+                            <li class="style_item">
+                                <a href="">Sport</a>
+                                <img class="icon-arrow" src="../../logo/icon-arrow.svg" alt="">
+                            </li>
+                            <li class="style_item">
+                                <a href="">Elegant</a>
+                                <img class="icon-arrow" src="../../logo/icon-arrow.svg" alt="">
+                            </li>
+                            <li class="style_item">
+                                <a href="">Formal (evening)</a>
+                                <img class="icon-arrow" src="../../logo/icon-arrow.svg" alt="">
+                            </li>
+                        </ul>
+                    </aside>
+                    <div class="product-content">
+                        <div class="product-content_title">
+                            <h3>Women’s Clothing</h3>
+                            <h3>New</h3>
+                            <h3>Recommended</h3>
+                        </div>
+                        <div class="product-project">
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+        <section class="desc">
+            <div class="container">
+                <div class="new-top">
+                    <span class="new-bar"></span>
+                    <h2 class="new-title">Clothing for Women Online in India</h2>
+                </div>
+                <div class="desc-content">
+                    <h3 class="desc-title">
+                        Reexplore Women's Clothing Collection Online at Euphoria
+                    </h3>
+                    <div class="desc-text">
+                        <p>Women's Clothing – Are you searching for the best website to buy Clothing for Women online in
+                            India? Well, your search
+                            for the coolest and most stylish womens clothing ends here. From trendy Casual Womens Wear
+                            Online shopping to premium
+                            quality cotton women's apparel, <span>Euphoria</span> has closet of Women Collection covered
+                            with the latest
+                            and best designs of
+                            Women's Clothing Online.</p>
+                        <p>Our collection of clothes for women will make you the trendsetter with an iconic resemblance
+                            of
+                            choice in Womens Wear.</p>
+                    </div>
+                    <h3 class="desc-title">
+                        One-Stop Destination to Shop Every Clothing for Women: Euphoria
+                    </h3>
+                    <div class="desc-text">
+                        <p>Today, Clothing for Women is gaining more popularity above all. This is because gone are
+                            the days when women were used
+                            to carrying uncomfortable fashion. Today, a lady looks prettier when she is in Casual
+                            Womens Wear which is a comfortable
+                            outfit. Concerning this, <span>Euphoria</span> has a big fat range of Stylish Women's
+                            Clothing that
+                            would make her the winner
+                            wherever she goes.</p>
+                        <p>Our collection of clothes for women will make you the trendsetter with an iconic
+                            resemblance of choice in Womens Wear.
+                            It is quite evident to say that there are very few Womens Clothing online stores where
+                            you can buy Western Wear for
+                            Women comprising the premium material and elegant design that you are always seeking
+                            for. Basically,</p>
+                    </div>
+                    <a href="#" class="desc-title">
+                        See More
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="sale">
+            <div class="container">
+                <div class="sale-content">
+                    <div class="new-top" style="margin-bottom: 50px;">
+                        <span class="new-bar"></span>
+                        <h2 class="new-title">Clothing for Women Online in India</h2>
+                    </div>
+                    <div class="sale-menu">
+                        <div class="sale-item_content">
+                            <h2>Women's Clothing</h2>
+                            <div class="sale-item_position">
+                                <a href="#">Pick Any 4- Womens Plain T-shirt Combo</a href="#">
+                                <a href="#">Pick Any 4- Plain Womens Boxer Combo</a href="#">
+                                <a href="#">Pick Any 4 - Women Plain Full Sleeve T-shirt Combo</a href="#">
+                                <a href="#">Multicolor Checkered Long Casual Shirts for Women</a href="#">
+                                <a href="#">Pick Any 2: Plain Boxy Casual Shirts for Women Combo</a href="#">
+                                <a href="#">Blue Floral Anarkali Kurti</a href="#">
+                                <a href="#">Jade Black Narrow Cut Flexible Women Jeggings</a href="#">
+                                <a href="#">Mustard-yellow Solid Straight-Fit Women Pant</a href="#">
+                                <a href="#">Women Pants Combo - Pick Any 2</a href="#">
+                                <a href="#">Pista Green Solid Boxy Casual Shirts for Women</a href="#">
+                                <a href="#">Plain Burgundy Womens Boxer</a href="#">
+                                <a href="#">Striped Front Tie Casual Shirts for Women</a href="#">
+                            </div>
+                        </div>
+                        <div class="sale-item_prices">
+                            <h2>Best Price</h2>
+                            <div class="sale-item_position">
+                                <a href="#">₹1099</a href="#">
+                                <a href="#">₹1099</a href="#">
+                                <a href="#">₹1399</a href="#">
+                                <a href="#">₹499</a href="#">
+                                <a href="#">₹799</a href="#">
+                                <a href="#">₹599</a href="#">
+                                <a href="#">₹998</a href="#">
+                                <a href="#">₹499</a href="#">
+                                <a href="#">₹800</a href="#">
+                                <a href="#">₹449</a href="#">
+                                <a href="#">₹349</a href="#">
+                                <a href="#">₹449</a href="#">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-menu">
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <h3 class="footer-item_title">Need Help</h3>
+                            </li>
+                            <li class="footer-item">
+                                <a href="">Contact Us</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="">Track Order</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="">Returns & Refunds</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="">FAQ's</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="">Career</a>
+                            </li>
+                        </ul>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <h3 class="footer-item_title">Company</h3>
+                            </li>
+                            <li class="footer-item">
+                                <a href="">About Us</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="">euphoria Blog</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="">euphoriastan</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="">Collaboration</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="">Media</a>
+                            </li>
+                        </ul>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <h3 class="footer-item_title">More Info</h3>
+                            </li>
+                            <li class="footer-item">
+                                <a href="">Term and Conditions</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="">Privacy Policy</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="">Shipping Policy</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="">Sitemap</a>
+                            </li>
+                        </ul>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <h3 class="footer-item_title">Location</h3>
+                            </li>
+                            <li class="footer-item">
+                                <a href="">support@euphoria.in</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="">Eklingpura Chouraha, Ahmedabad Main Road</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="">(NH 8- Near Mahadev Hotel) Udaipur, India- 313002</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-about">
+                        <ul class="footer-about_menu">
+                            <li class="footer-about_item">
+                                <a href="">
+                                    <img src="../../logo/icon-fb.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="footer-about_item">
+                                <a href="">
+                                    <img src="../../logo/icon-instagram.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="footer-about_item">
+                                <a href="">
+                                    <img src="../../logo/icon-tw.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="footer-about_item">
+                                <a href="">
+                                    <img src="../../logo/icon-in.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="footer-download">
+                            <h3>Download The App</h3>
+                            <div class="footer-app">
+                                <a class="footer-app_content">
+                                    <img src="../../logo/icon-chplay.svg" alt="">
+                                    <div class="footer-text">
+                                        <span>android app on</span>
+                                        <h3>Google Play</h3>
+                                    </div>
+                                </a>
+                                <a class="footer-app_content">
+                                    <img src="../../logo/icon-appstore.svg" alt="">
+                                    <div class="footer-text">
+                                        <span>Available on the</span>
+                                        <h3>App Store</h3>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular">
+                        <h2>Popular Categories</h2>
+                        <img src="../../logo/Icon-bottom.svg" alt="">
+                    </div>
+                    <p class="footer-copyright">
+                        Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </footer>
     </body>
+    <script src="../../../base.js"></script>
+    <script src="./product.js"></script>
 
 </html>

@@ -1,0 +1,166 @@
+{
+  "women": [
+    {
+      "id": 1,
+      "image": "../../img/women-1.png",
+      "name": "Black Sweatshirt with ....",
+      "prices": "123.00",
+      "status": 200,
+      "desc": "Jhanvi’s  Brand"
+    },
+    {
+      "image": "../../img/women-2.png",
+      "name": "White T-shirt",
+      "prices": "11.00",
+      "status": "200",
+      "desc": "Helen’s  Brand",
+      "id": 2
+    },
+    {
+      "image": "../../img/women-3.png",
+      "name": "Levender Hoodie with ....",
+      "prices": "119.00",
+      "status": "200",
+      "desc": "Nike’s  Brand",
+      "id": 3
+    },
+    {
+      "image": "../../img/women-4.png",
+      "name": "Leaves Pattern White...",
+      "prices": "77.00",
+      "status": "200",
+      "desc": "paypal’s  Brand",
+      "id": 4
+    },
+    {
+      "image": "../../img/women-5.png",
+      "name": "White Graphic Crop Top",
+      "prices": "29.00",
+      "status": "200",
+      "desc": "woden’s  Brand",
+      "id": 5
+    },
+    {
+      "image": "../../img/women-6.png",
+      "name": "Black Shorts",
+      "prices": "37.00",
+      "status": "200",
+      "desc": "MM’s  Brand",
+      "id": 6
+    },
+    {
+      "image": "../../img/women-7.png",
+      "name": "Barboreal Gray Sweats...",
+      "prices": "77.00",
+      "status": "200",
+      "desc": "Priya’s  Brand",
+      "id": 7
+    },
+    {
+      "image": "../../img/women-8.png",
+      "name": "Yellow Sweatshirt",
+      "prices": "29.00",
+      "status": "200",
+      "desc": "woden’s  Brand",
+      "id": 8
+    },
+    {
+      "image": "../../img/women-9.png",
+      "name": "Flower Pattern Black C...",
+      "prices": "37.00",
+      "status": "200",
+      "desc": "MM’s  Brand",
+      "id": 9
+    },
+    {
+      "image": "../../img/women-10.png",
+      "name": "I Don’t Graphic T-shirt ",
+      "prices": "77.00",
+      "status": "200",
+      "desc": "Nisargi’s  Brand",
+      "id": 10
+    },
+    {
+      "image": "../../img/women-11.png",
+      "name": "Blue Flower Print Crop ....",
+      "prices": "29.00",
+      "status": "200",
+      "desc": "Mellon’s  Brand",
+      "id": 11
+    },
+    {
+      "image": "../../img/women-12.png",
+      "name": "line Pattern Black H...",
+      "prices": "37.00",
+      "status": "200",
+      "desc": "AS’s  Brand",
+      "id": 12
+    }
+  ],
+  "men": [
+    {
+      "image": "../../img/men-1.png",
+      "name": "Shirts",
+      "prices": "49.00",
+      "status": "200",
+      "desc": "Jhanvi’s  Brand",
+      "id": 1
+    },
+    {
+      "image": "../../img/men-2.png",
+      "name": "Printed T-Shirts",
+      "prices": "77.00",
+      "status": "200",
+      "desc": "Priya’s  Brand",
+      "id": 2
+    },
+    {
+      "image": "../../img/men-3.png",
+      "name": "Plain T-Shirt",
+      "prices": "99.00",
+      "status": "200",
+      "desc": "paypal’s  Brand",
+      "id": 3
+    },
+    {
+      "image": "../../img/men-4.png",
+      "name": "Polo T-Shirt",
+      "prices": "37.00",
+      "status": "200",
+      "desc": "MM’s  Brand",
+      "id": 4
+    },
+    {
+      "image": "../../img/men-5.png",
+      "name": "Hoodies & Sweetshirt",
+      "prices": "29.00",
+      "status": "200",
+      "desc": "woden’s  Brand",
+      "id": 5
+    },
+    {
+      "image": "../../img/men-6.png",
+      "name": "Jeans",
+      "prices": "77.00",
+      "status": "200",
+      "desc": "Priya’s  Brand",
+      "id": 6
+    },
+    {
+      "image": "../../img/men-7.png",
+      "name": "Activewear",
+      "prices": "119.00",
+      "status": "200",
+      "desc": "Nike’s  Brand",
+      "id": 7
+    },
+    {
+      "image": "../../img/men-8.png",
+      "name": "Boxers",
+      "prices": "123.00",
+      "status": "200",
+      "desc": "Jhanvi’s  Brand",
+      "id": 8
+    }
+  ]
+}

@@ -1,4 +1,6 @@
 /* button */
+.details-info_btn > button:hover,
+.offers-btn:hover,
 .sale-item_btn:hover,
 .sale-list_btn:hover,
 .banner-btn:hover,
@@ -11,6 +13,7 @@
   transition: scale 0.3s;
 }
 /* hover-product */
+.brand-item:hover,
 .sale-menu_item:hover,
 .sale-list_item:hover,
 .categories_item:hover,
@@ -22,12 +25,19 @@
   cursor: pointer;
 }
 /* text */
+.sale-item_position > a:hover,
+.color__item > span:hover,
+.size_item > a:hover,
+.style_item > a:hover,
+.product-nav_item > a:hover,
+.footer-item > a:hover,
 .checkbox-2 > label > a:hover,
 .checkbox-1 > label > a:hover,
 .signup:hover,
 .forget_password:hover {
   color: #8a33fd;
   transition: 0.3s;
+  cursor: pointer;
 }
 .d-none {
   display: none;
@@ -38,7 +48,13 @@
 .show-important {
   display: block !important;
 }
-
+.border {
+  border: 1px solid #3c4242 !important;
+}
+.bg-black {
+  background: #3c4242;
+  color: #fff !important;
+}
 /* show-nav */
 @keyframes showNav {
   0% {
