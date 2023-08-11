@@ -1,4 +1,7 @@
 /* button */
+.check-info_btn:hover,
+.shop-left_form > button:hover,
+.no-cart_btn:hover,
 .details-info_btn > button:hover,
 .offers-btn:hover,
 .sale-item_btn:hover,
@@ -38,6 +41,14 @@
   color: #8a33fd;
   transition: 0.3s;
   cursor: pointer;
+}
+.icon_arrow {
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #807d7e;
+  border-right: 2px solid #807d7e;
+  border-radius: 1px;
+  transform: rotate(45deg);
 }
 .d-none {
   display: none;

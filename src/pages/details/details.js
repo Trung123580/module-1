@@ -54,7 +54,6 @@ line.style.width = tabsActive.offsetWidth + 'px';
 console.log(tabsActive);
 tabs.forEach((item, index) => {
   const pane = panes[index];
-
   item.addEventListener('click', (e) => {
     $('.tab__item.active').classList.remove('active');
     $('.pane__item.active').classList.remove('active');
@@ -72,24 +71,30 @@ const handleDetails = (e) => {
 };
 // handleAddProduct
 const handleAddProduct = (e) => {
-  const id = e.dataset.id;
-  const name = e.dataset.categories;
-  const user = {
-    id: id,
-    name: name,
-  };
-  let getData = localStorage.getItem('product');
-  const dataArray = getData ? JSON.parse(getData) : [];
-  dataArray.push(user);
-  if (id && name) localStorage.setItem('product', JSON.stringify(dataArray));
-  const content = document.querySelector(`.details-info_btn > button > span`);
-  content.textContent = 'Add Success';
-  addSuccess(content);
+  const size = $('.bg-black');
+  if (size !== null) {
+    const id = e.dataset.id;
+    const name = e.dataset.categories;
+    const user = {
+      id: id,
+      name: name,
+      size: size.textContent,
+    };
+    let getData = localStorage.getItem('product');
+    const dataArray = getData ? JSON.parse(getData) : [];
+    dataArray.push(user);
+    if (id && name) localStorage.setItem('product', JSON.stringify(dataArray));
+    const content = $(`.details-info_btn > button > span`);
+    content.textContent = 'Add Success';
+    addSuccess(content);
+  } else {
+    alert('ban chua chon size');
+  }
 };
 const addSuccess = (content) => {
-  document.querySelector('#blur').style.display = 'inline-flex';
+  $('#blur').style.display = 'inline-flex';
   setTimeout(() => {
-    const blur = document.querySelector('#blur');
+    const blur = $('#blur');
     content.textContent = 'Add to cart';
     blur.style = `display: none`;
   }, 2000);
@@ -98,32 +103,30 @@ const addSuccess = (content) => {
 const callApi = async (categories) => {
   const detailsBanner = $('.details-content');
   if (categories) {
-    const data = `http://localhost:3000/${categories}`;
-    await fetch(data)
-      .then((res) => res.json())
-      .then((data) => {
-        // let random = Math.floor(Math.random() * data.length);
-        const random = (number) => {
-          const data = Math.floor(Math.random() * number.length);
-          if (data !== 0) {
-            return data;
-          }
-          return 1;
-        };
-        const details = data.map((item) => {
-          const { image, id, name, prices } = item;
-          if (parseInt(productId) === id) {
-            return `  
+    const api = `http://localhost:3000/${categories}`;
+    const data = await fetch(api);
+    const dataMen = await data.json();
+    const random = (number) => {
+      const data = Math.floor(Math.random() * number.length);
+      if (data !== 0) {
+        return data;
+      }
+      return 1;
+    };
+    const details = dataMen.map((item) => {
+      const { image, id, name, prices } = item;
+      if (productId && parseInt(productId) === id) {
+        return `  
               <div class="details-review">
                 <div class="details-review_list">
                     <div class="details-review_item" onClick="handleFocus(this)" data-categories=${categories}>
-                        <img src="../../img/${categories}-${random(data)}.png" alt="">
+                        <img src="../../img/${categories}-${random(dataMen)}.png" alt="">
                     </div>
                     <div class="details-review_item " onClick="handleFocus(this)" data-categories=${categories}>
-                        <img src="../../img/${categories}-${random(data)}.png" alt="">
+                        <img src="../../img/${categories}-${random(dataMen)}.png" alt="">
                     </div>
                     <div class="details-review_item" onClick="handleFocus(this)" data-categories=${categories}>
-                        <img src="../../img/${categories}-${random(data)}.png" alt="">
+                        <img src="../../img/${categories}-${random(dataMen)}.png" alt="">
                     </div>
                     <div class="details-review_btn">
                         <button type="button"></button>
@@ -139,8 +142,8 @@ const callApi = async (categories) => {
                  <span>Shop</span>
                  <span class="icon_arrow"></span>
                  <span>${categories}</span> 
-                 <span>Top</span> 
                  <span class="icon_arrow"></span> 
+                 <span>Top</span> 
               </div>
               <h2 class="details-info_title">${name}</h2>
               <div class="details-info_review">
@@ -233,13 +236,13 @@ const callApi = async (categories) => {
               </div>  
              
             `;
-          }
-        });
-        detailsBanner.innerHTML = details.join('');
-        const productList = document.querySelector('.product-menu');
-        const product = data.map((item) => {
-          const { id, name, image, prices, desc } = item;
-          return `
+      }
+    });
+    detailsBanner.innerHTML = details.join('');
+    const productList = document.querySelector('.product-menu');
+    const product = dataMen.map((item) => {
+      const { id, name, image, prices, desc } = item;
+      return `
             <div class="categories_item" onClick="handleDetails(this)" data-id=${id} data-categories=${categories}>
                 <img class="categories_img" src=${image} alt=${name}>
                 <div class="categories_info">
@@ -254,9 +257,8 @@ const callApi = async (categories) => {
                 </div>
             </div>
           `;
-        });
-        productList.innerHTML = product.join('');
-      });
+    });
+    productList.innerHTML = product.join('');
     randomDetails();
   }
 };

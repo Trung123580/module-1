@@ -1,27 +1,17 @@
-function barMenu() {
-  const icon_bar = document.querySelector('.nav-bar');
-  const icon_item = document.querySelectorAll('.nav-bar > span');
-  const header_menu = document.querySelector('.nav');
-  let isXState = true;
-  icon_bar.addEventListener('click', () => {
-    icon_item.forEach((item, index) => {
-      if (isXState) {
-        index === 0
-          ? (item.style = `top : 10px ; rotate : 35deg`)
-          : index === 1
-          ? (item.style.opacity = `1`)
-          : (item.style = `top : -8px ; rotate: -35deg`);
-        header_menu.style.display = 'block';
-        isXState = false;
-      } else {
-        index === 0 ? (item.style = `top : 0 ; rotate : 0`) : index === 1 ? (item.style.opacity = '0') : (item.style = `top : 0 ; rotate: 0`);
-        header_menu.style.display = 'none';
-        isXState = true;
-      }
-    });
-  });
-}
-
+const banner = document.querySelectorAll('.banner-img');
+const middle = document.querySelectorAll('.banner-middle > span');
+let currentIndex = 0;
+const changeSlide = (direction) => {
+  console.log(direction);
+  console.log(banner[1]);
+  const index = direction === 'next' ? currentIndex + 1 : currentIndex - 1;
+  if (index >= banner.length || index < 0) return;
+  banner[currentIndex].style.transform = `translateX(${direction === 'next' ? '-' : ''}${index * 100}%)`;
+  banner[index].style.transform = `translateX(-${index * 100}%)`;
+  currentIndex = index;
+  middle[direction === 'next' ? 1 : 0].style.background = '#fff';
+  middle[direction === 'next' ? 0 : 1].style.background = `rgb(255,255,255,.2)`;
+};
 const handleDetails = (e) => {
   const id = e.dataset.id;
   const data = e.dataset.categories;
@@ -117,6 +107,5 @@ document.querySelectorAll('.sale-list_item').forEach((item) => item.addEventList
 document.querySelector('.deals-left').addEventListener('click', (e) => productNav(e.target.dataset.api));
 document.querySelector('.deals-right').addEventListener('click', (e) => productNav(e.target.dataset.api));
 const productNav = (dataApi) => {
-  console.log(dataApi);
   window.location.href = `../product/product.html?data=${dataApi}`;
 };

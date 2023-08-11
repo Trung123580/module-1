@@ -45,12 +45,11 @@ const callApi = async (dataApi) => {
   if (dataApi) {
     try {
       const api = `http://localhost:3000/${dataApi}`;
-      await fetch(api).then((res) =>
-        res.json().then((data) => {
-          const product = data.map((item) => {
-            console.log(item);
-            const { image, name, id, prices, desc } = item;
-            return `
+      const data = await fetch(api);
+      const dataMen = await data.json();
+      const product = dataMen.map((item) => {
+        const { image, name, id, prices, desc } = item;
+        return `
             <div class="categories_item" onClick="handleDetails(this)" data-id=${id} data-categories=${dataApi}>
                 <img class="categories_img" src=${image} alt=${name}>
                 <div class="categories_info">
@@ -65,12 +64,10 @@ const callApi = async (dataApi) => {
                 </div>
             </div>
           `;
-          });
-          renderProduct.innerHTML = product.join('');
-        })
-      );
+      });
+      renderProduct.innerHTML = product.join('');
     } catch (error) {
-      console.log(error.response);
+      console.log(error);
     }
   }
 };

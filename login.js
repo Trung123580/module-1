@@ -70,9 +70,7 @@ const randomBanner = (arrEvent) => {
         banner.setAttribute('src', item.image);
         from.forEach((item) => {
           from[0].classList.add('d-none');
-          item.getAttribute('data-from') === key
-            ? item.classList.add('d-show')
-            : item.classList.remove('d-show');
+          item.getAttribute('data-from') === key ? item.classList.add('d-show') : item.classList.remove('d-show');
         });
       }
     });
@@ -151,9 +149,7 @@ function checkSignup(email, password, submit, showEmail, showPassword) {
           const convertPass = convert(item.password); // tolowcase
           const convertEmail = convert(email[0].value);
           const convertPassword = convert(password[0].value);
-          convertAccount === convertEmail && convertPass === convertPassword
-            ? (window.location.href = './src/pages/home/home.html')
-            : null;
+          convertAccount === convertEmail && convertPass === convertPassword ? (window.location.href = './src/pages/home/home.html') : null;
         });
       }
       event.target.reset();
