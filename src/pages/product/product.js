@@ -1,5 +1,5 @@
-const data = new URLSearchParams(window.location.search);
-const productCategories = data.get('data');
+const valueData = new URLSearchParams(window.location.search);
+const productCategories = valueData.get('data');
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 const product = $$('.control');
@@ -38,13 +38,14 @@ colorList.forEach((item, index) => {
 const handleDetails = (e) => {
   const id = e.dataset.id;
   const data = e.dataset.categories;
+  console.log(data);
   window.location.href = `../details/details.html?id=${id}&data=${data}`;
 };
 const callApi = async (dataApi) => {
   const renderProduct = $('.product-project');
   if (dataApi) {
     try {
-      const api = `http://localhost:3000/${dataApi}`;
+      const api = `https://64d25c43f8d60b174361f07e.mockapi.io/api/${dataApi}`;
       const data = await fetch(api);
       const dataMen = await data.json();
       const product = dataMen.map((item) => {

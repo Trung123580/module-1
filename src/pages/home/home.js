@@ -22,7 +22,7 @@ const callApi = async () => {
   const productList = document.querySelector('.categories-menu');
   // Api women
   try {
-    const data = 'http://localhost:3000/men';
+    const data = 'https://64d25c43f8d60b174361f07e.mockapi.io/api/men';
     await fetch(data)
       .then((item) => item.json())
       .then((data) => {
@@ -50,7 +50,7 @@ const callApi = async () => {
   //Api men
   const cate = document.querySelector('.categories-menu_women2');
   try {
-    const data = 'http://localhost:3000/women';
+    const data = 'https://64d25c43f8d60b174361f07e.mockapi.io/api/women';
     await fetch(data)
       .then((data) => data.json())
       .then((data) => {

@@ -1,4 +1,7 @@
 /* button */
+.shop-left_btn:hover,
+.btn-checkout:hover,
+.card-btn:hover,
 .check-info_btn:hover,
 .shop-left_form > button:hover,
 .no-cart_btn:hover,
@@ -20,7 +23,6 @@
 .sale-menu_item:hover,
 .sale-list_item:hover,
 .categories_item:hover,
-.new-item:hover,
 .deals-right:hover,
 .deals-left:hover {
   transform: translate(0, -10px);

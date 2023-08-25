@@ -236,14 +236,14 @@ const checkOut = (content, dataMen, dataWomen, product) => {
         if (productMatch) {
           return `
             <div class="check-order">
-                <div class="product">
+                <div class="product check-product" style="display: flex">
                   <div class="product-info">
                     <img src="${image}" alt="error">
                       <div class="product-info_desc">
                           <div>
-                            <h3>${name}</h3><span>${filterId.length}</span>
+                            <h3>${name}</h3> <span> x ${filterId.length}</span>
                           </div>
-                          <span>Color: Yellow</span>
+                          <p>Color: <span> ${filterId.length === 1 ? 'Black' : 'Yellow'}</span> </p>
                       </div>
                   </div>
                    <div class="product-total">
@@ -259,19 +259,82 @@ const checkOut = (content, dataMen, dataWomen, product) => {
         }
       });
     };
-
     const value = checkOutDom.split('').join('');
     const div = document.createElement('div');
     const div2 = document.createElement('div');
-    div2.className = 'container check-content';
+    const div3 = document.createElement('div');
+    const title = document.createElement('h2');
+    const line = document.createElement('div');
     div.className = 'check-order_list';
-    div2.innerHTML = [...value].join('');
+    div2.className = 'container check-content';
+    div3.className = 'order-menu';
+    title.className = 'order-title';
+    title.textContent = `Order Summary`;
+    line.className = 'line-4';
+    div2.innerHTML = [[...value].join('')];
+    div2.appendChild(div);
+    div.appendChild(title);
+    div.appendChild(line);
+    div.appendChild(div3);
+    const dataMenElements = data(dataMen);
+    const dataWomenElements = data(dataWomen);
+    const listProduct = div2.querySelector('.order-menu');
+    const renderProduct = (data) => {
+      const convertData = data.filter((item) => item !== undefined);
+      convertData.forEach((element) => {
+        const item = element.trim();
+        const range = document.createRange();
+        const fragment = range.createContextualFragment(item);
+        listProduct.appendChild(fragment);
+      });
+    };
+    renderProduct(dataMenElements);
+    renderProduct(dataWomenElements);
+    console.log(div2);
     content.innerHTML = ''.split('').join('');
     content.append(div2);
-    div2.append(div);
-    div.innerHTML = [...data(dataMen), ...data(dataWomen)].join('');
+    const pricesAll = document.querySelectorAll('.product-total');
+    const productAll = document.querySelectorAll('.product-total').length;
+    const shippingAll = document.querySelectorAll('.product-shipping');
+    const resultPrices = [...pricesAll].reduce((acc, item) => {
+      return acc + parseInt(item.textContent.trim().substring(1, item.textContent.trim().length - 3));
+    }, 0);
+    const calculationShipping = [...shippingAll].reduce((acc, item) => {
+      const mony = item.textContent.trim();
+      for (let i = 0; i < mony.length; i++) {
+        if (!isNaN(mony[i])) {
+          //!isNaN  kiểm tra xem nó có phải là 1 số trong chuỗi String không
+          acc += parseInt(mony[i]);
+        }
+      }
+      return acc;
+    }, 0);
+    const totalPrices = `
+      <div class="total-menu">
+        <div class="total-item">
+          <p>Subtotal <span> ( ${productAll} items )</span></p>
+          <span>$${resultPrices}.00</span>
+        </div>
+        <div class="total-item">
+          <span>Savings</span>
+          <span>-$30.00</span>
+        </div>
+        <div class="line-4"></div>
+        <div class="total-item">
+          <span>Shipping</span>
+          <span>-$${calculationShipping}.00</span>
+        </div>
+        <div class="line-4"></div>
+        <div class="total-item">
+          <span>Total</span>
+          <span>$${resultPrices - 30 - calculationShipping}.00</span>
+        </div>
+      </div>
+    `;
+    const range = document.createRange();
+    const fragment = range.createContextualFragment(totalPrices);
+    div.appendChild(fragment);
   });
-  console.log(content, dataMen, dataWomen);
 };
 const productShop = () => {
   const token = localStorage.getItem('product');
@@ -288,8 +351,8 @@ const productShop = () => {
     const callApi = async (data) => {
       const [men, women] = data;
       try {
-        const apiMen = `http://localhost:3000/${men}`;
-        const apiWomen = `http://localhost:3000/${women}`;
+        const apiMen = `https://64d25c43f8d60b174361f07e.mockapi.io/api/${men}`;
+        const apiWomen = `https://64d25c43f8d60b174361f07e.mockapi.io/api/${women}`;
         // const resMen = await fetch(apiMen);
         // const resWomen = await fetch(apiWomen);
         // const dataMen = await resMen.json();
@@ -308,6 +371,8 @@ const productShop = () => {
             api: 'women',
           };
         });
+        const dataApi = [...convertDataMen, ...convertDataWomen];
+        dataApiAll(dataApi);
         checkOut(contentShop, convertDataMen, convertDataWomen, product);
         const data = (dataArray) => {
           return dataArray.map((item, index) => {
@@ -372,3 +437,11 @@ const productShop = () => {
   }
 };
 productShop();
+const dataApiAll = (data) => {
+  let dataToken = [];
+  data.forEach((item) => {
+    dataToken.push(item);
+  });
+  const convert = JSON.stringify(dataToken);
+  localStorage.setItem('dataApiAll', convert);
+};

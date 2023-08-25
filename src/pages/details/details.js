@@ -1,6 +1,6 @@
-const data = new URLSearchParams(window.location.search);
-const productId = data.get('id');
-const productCategories = data.get('data');
+const valueData = new URLSearchParams(window.location.search);
+const productId = valueData.get('id');
+const productCategories = valueData.get('data');
 const $ = document.querySelector.bind(document);
 const $$ = document.querySelectorAll.bind(document);
 // console.log(productId, productCategories);
@@ -103,7 +103,7 @@ const addSuccess = (content) => {
 const callApi = async (categories) => {
   const detailsBanner = $('.details-content');
   if (categories) {
-    const api = `http://localhost:3000/${categories}`;
+    const api = `https://64d25c43f8d60b174361f07e.mockapi.io/api/${categories}`;
     const data = await fetch(api);
     const dataMen = await data.json();
     const random = (number) => {

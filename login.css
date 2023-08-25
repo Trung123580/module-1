@@ -1,32 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 .header {
   border-bottom: 1px solid #bebcbd;
 }
+
 .header-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 35px 0;
 }
+
 .header-logo {
   display: flex;
   align-items: center;
 }
+
 .header-logo > a > img {
   width: 91.165px;
   height: 45px;
   object-fit: cover;
 }
+
 .header-right,
 .header-left {
   display: flex;
   position: relative;
 }
+
 .header-search {
   flex-grow: 1;
   align-items: center;
   display: flex;
   justify-content: center;
 }
+
 .search-wrapper {
   width: 184px;
   display: flex;
@@ -35,11 +42,13 @@
   background-color: #f6f6f6;
   border-radius: var(--border-radius);
 }
+
 .search-wrapper > img {
   width: 20px;
   height: 20px;
   object-fit: cover;
 }
+
 .search-wrapper > input {
   height: 22px;
   width: 100%;
@@ -47,9 +56,11 @@
   font-size: 1.8rem;
   font-weight: 500;
 }
+
 .search-wrapper > input::placeholder {
   color: var(--color-text);
 }
+
 .header-menu {
   flex-grow: 1;
   display: flex;
@@ -65,6 +76,7 @@
   color: #333333;
   font-size: 1.8rem;
 }
+
 .header-menu > ul {
   font-size: 1.8rem;
   position: absolute;
@@ -73,13 +85,16 @@
   left: 43px;
   display: none;
 }
+
 .header-menu > ul > li {
   width: 100%;
   margin-bottom: 5px;
 }
+
 .header-menu > ul > li:last-child {
   margin-bottom: 0;
 }
+
 .header-menu > ul > li > a {
   text-decoration: none;
   color: #333333;
@@ -88,14 +103,17 @@
   display: inline-block;
   padding: 5px 10px;
 }
+
 .header-menu > ul > li > a:hover {
   background-color: #f6f6f6;
 }
+
 .header-group {
   display: flex;
   align-items: center;
   gap: 30px;
 }
+
 .header-group > button {
   padding: 12px 48px;
   color: #fff;
@@ -105,28 +123,35 @@
   background: #8a33fd;
   border: 1px solid transparent;
 }
+
 .header-group > button:last-child {
   color: #8a33fd;
   background: transparent;
   border: 1px solid var(--color-title);
 }
+
 .from {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+
 .from-left {
 }
+
 .form-banner {
   width: 100%;
   object-fit: cover;
 }
+
 .from-right {
 }
+
 .from-right_content {
   padding: 60px 0 0 77px;
   max-width: 620px;
   height: 100%;
 }
+
 .from-right_title {
   color: #333;
   font-size: 3.4rem;
@@ -135,18 +160,21 @@
   font-weight: 600;
   margin-bottom: 50px;
 }
+
 .from-right_dsecription {
   color: rgba(102, 102, 102, 0.8);
   font-size: 1.6rem;
   font-weight: 500;
   margin-top: 10px;
 }
+
 .from-network {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
 }
+
 .from-network_tw,
 .from-network_gg {
   display: flex;
@@ -161,28 +189,33 @@
   font-size: 2.2rem;
   font-weight: 500;
 }
+
 .from-network_tw > img,
 .from-network_gg > img {
   min-width: 20px;
   height: 20px;
   object-fit: cover;
 }
+
 .from-or {
   display: flex;
   margin: 50px 0;
   gap: 23px;
   align-items: center;
 }
+
 .driver {
   background: rgba(102, 102, 102, 0.25);
   height: 2px;
   flex-grow: 1;
 }
+
 /* login */
 .from-group {
   display: flex;
   flex-direction: column;
 }
+
 .from-password,
 .from-email {
   display: flex;
@@ -190,15 +223,18 @@
   gap: 12px;
   position: relative;
 }
+
 .from-email {
   margin-bottom: 30px;
 }
+
 .from-password > label .from-email > label {
   color: #3c4242;
   font-size: 1.8rem;
   font-weight: 400;
   letter-spacing: 0.36px;
 }
+
 .password-input > input,
 .email-input > input {
   width: 100%;
@@ -210,10 +246,12 @@
   font-weight: 400;
   letter-spacing: 0.36px;
 }
+
 .from-password_show {
   display: flex;
   justify-content: space-between;
 }
+
 .from-password_show > span {
   display: flex;
   gap: 15px;
@@ -221,12 +259,14 @@
   font-size: 1.8rem;
   font-weight: 400;
 }
+
 .show-password {
   width: 18.188px;
   height: 15.996px;
   cursor: pointer;
   object-fit: cover;
 }
+
 .forget_password {
   color: #3c4242;
   text-align: right;
@@ -235,12 +275,14 @@
   text-decoration-line: underline;
   margin: 10px 0 30px;
 }
+
 .from-submit {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 20px;
 }
+
 .from-submit > button {
   padding: 16px 20px;
   color: #fff;
@@ -251,6 +293,7 @@
   font-weight: 500;
   background-color: #8a33fd;
 }
+
 .signup,
 .from-submit > span {
   color: #3c4242;
@@ -259,21 +302,25 @@
   display: flex;
   gap: 3px;
 }
+
 .signup {
   text-decoration-line: underline;
 }
+
 .from-right_checkbox {
   display: flex;
   flex-direction: column;
   gap: 18px;
   margin: 30px 0 58px;
 }
+
 .checkbox-2,
 .checkbox-1 {
   display: flex;
   align-items: center;
   gap: 10px;
 }
+
 .checkbox-2 > label,
 .checkbox-1 > label,
 .checkbox-2 > label > a,
@@ -282,17 +329,21 @@
   font-size: 1.8rem;
   font-weight: 500;
 }
+
 .checkbox-2 > label > a,
 .checkbox-1 > label > a {
   text-decoration-line: underline;
 }
+
 input[type='checkbox'] {
   height: 20px;
   width: 20px;
 }
+
 input[type='checkbox'] {
   accent-color: #333;
 }
+
 .show-pass_password,
 .show-error {
   position: absolute;
